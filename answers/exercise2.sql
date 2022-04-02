@@ -1,0 +1,2 @@
+# Write a Query that returns the city, state and number of instances of all of the FALSE or NULL timezones.
+SELECT city, state, COUNT(timezone) FROM Zipcodes WHERE timezone = 'False' or timezone is Null GROUP BY city, state;

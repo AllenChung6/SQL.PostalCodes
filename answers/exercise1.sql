@@ -16,5 +16,5 @@ SELECT DISTINCT timezone FROM Zipcodes;
 # Notice anything peculiar?
 # There are 288 rows of timezones and many of them are just numbers.
 
-
-
+# Write a Query that returns the zipcode, city, state, and county of all of the FALSE or NULL timezones.
+SELECT zip, city, state, county FROM Zipcodes WHERE timezone = 'FALSE' or NULL;
